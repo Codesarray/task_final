@@ -1,0 +1,52 @@
+# =================================================================
+# General / IDE
+# =================================================================
+# IDE-specific folders
+.idea/
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# =================================================================
+# Node.js / Backend
+# =================================================================
+# Dependencies
+backend/node_modules/
+
+# Environment variables file - VERY IMPORTANT! Contains secrets.
+backend/.env
+
+# Log files
+backend/*.log
+backend/logs/
+
+# NPM and Yarn debug logs
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+# =================================================================
+# Vite / Frontend
+# =================================================================
+# Dependencies
+frontend/node_modules/
+
+# Build output folder
+frontend/dist/
+
+# Local environment variables - IMPORTANT!
+frontend/.env.local
+frontend/.env.*.local
+
+# Log files
+frontend/*.log
+frontend/logs/
+
+# NPM and Yarn debug logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Test runner reports
+frontend/coverage/
