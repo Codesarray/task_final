@@ -19,7 +19,7 @@ const app = express();
 // CORS configuration to allow requests from the frontend
 app.use(
   cors({
-    origin: "http://localhost:5173", // This must match your frontend's URL
+    origin: ["http://localhost:5173", "https://task-final-zeta.vercel.app/"], // This must match your frontend's URL
     credentials: true,
   })
 );
