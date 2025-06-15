@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = process.env.REACT_APP_API_URL;
+const API_URL = import.meta.env.VITE_API_URL;
 
 // Login user
 const login = async (userData) => {
@@ -12,7 +12,7 @@ const login = async (userData) => {
 
 // Logout user
 const logout = async () => {
-  await axios.post(API_URL + "/api/users/logout");
+  await axios.post(`${API_URL}/api/users/logout`);
   localStorage.removeItem("user");
 };
 
